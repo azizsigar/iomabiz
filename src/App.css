@@ -27,6 +27,15 @@ body {
   border: none;
 
 }
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20vh;
+  margin: auto;
+}
+
 .content {
   display: flex;
   gap: 20vh;
@@ -35,6 +44,35 @@ body {
   flex-direction: column;
   margin: auto;
 }
+.contact-link {
+  color: #646cff; /* Link color */
+  text-decoration: none; /* Remove underline from the link */
+  font-size: 1.2rem; /* Adjust font size for emphasis */
+}
+
+.contact-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #4a4a4a; /* Change color on hover */
+}
+
+/* Define the keyframes for the sliding animation */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0; /* Start with invisible text */
+  }
+  100% {
+    transform: translateX(0); /* End at its original position */
+    opacity: 1; /* End with visible text */
+  }
+}
+
+/* Apply the animation to the heading */
+.slide-in {
+  display: inline-block; /* Allows the text to be animated properly */
+  animation: slideIn 2s ease-out; /* Apply the animation with duration and easing */
+}
+
 
 /* App.css */
 @keyframes boxShadowPulse {

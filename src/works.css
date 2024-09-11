@@ -1,9 +1,62 @@
-.works-parent{
+.works-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto; /* Change height to auto to adapt to content */
+    padding: 1rem;
+}
+
+.work-childs {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 90vh;
-    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start to avoid extra white space */
+    gap: 1rem; /* Space between items */
+}
 
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0.5rem; /* Reduced margin to fit more items */
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px; /* Maximum width for responsiveness */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.work-item a {
+    text-decoration: none;
+    color: #646cff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.work-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .work-item {
+        max-width: 45%; /* Adjust for slightly smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .work-item {
+        max-width: 90%; /* Adjust for tablet screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .work-item {
+        max-width: 100%; /* Full width on mobile screens */
+    }
 }
