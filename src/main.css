@@ -1,0 +1,27 @@
+.main {
+  color: #646cff;
+  border-radius: 1rem;
+  font-size: 1rem;
+  padding: 1rem;
+  height: 90vh;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  background-color: bisque;
+  border-radius: 5px;
+  padding: 1rem;
+}
+body {
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  flex-direction: row;
+}

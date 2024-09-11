@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bolder;
+  /* position: fixed; */
+  /* top: 0; */
+  /* z-index: 1000; */
+  color: #646cff;
+}
+li {
+  list-style: none;
+  display: inline;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+a {
+  text-decoration: none;
+  padding: 0.5rem;
+}
