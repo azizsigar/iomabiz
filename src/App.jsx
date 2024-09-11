@@ -1,10 +1,10 @@
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from '../comps/Navbar';
-import Main from '../pages/Main';
-import About from '../pages/AboutMe';
-import Works from '../pages/Works';
-import '../App.css';
+import Navbar from '../src/comps/Navbar';
+import Main from '../src/pages/Main';
+import About from '../src/pages/AboutMe';
+import Works from '../src/pages/Works';
+import '../src/App.css';
 function App() {
   return (
     <div className='App'>

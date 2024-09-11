@@ -1,6 +1,6 @@
 // Navbar.js
 import { Link } from 'react-router-dom';
-import '../styles/Nav.css'; // Updated path for Nav.css
+import "/Users/hackyourfuture/personal website/personal-page/azureai/src/Nav.css"; // Updated path for Nav.css
 function Navbar() {
     return (
         <nav>
