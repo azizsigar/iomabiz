@@ -1,6 +1,6 @@
 // Navbar.js
 import { Link } from 'react-router-dom';
-import "/Users/hackyourfuture/personal website/personal-page/azureai/src/Nav.css"; // Updated path for Nav.css
+import "/src/Nav.css"; // Updated path for Nav.css
 function Navbar() {
     return (
         <nav>
@@ -13,6 +13,9 @@ function Navbar() {
                 </li>
                 <li>
                     <Link to="/works">Works</Link>
+                </li>
+                <li>
+                    <Link to="/auth">Join the gang!</Link>
                 </li>
             </ul>
         </nav>

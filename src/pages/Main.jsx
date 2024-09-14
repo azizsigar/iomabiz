@@ -1,26 +1,12 @@
-import "../main.css";
-export default function Main() {
+import "../App.css";
+
+export default function Main     () {
   return (
     <div className="main">
-      <div className="main-content">
-        <h1 class="slide-in">Where Creativity Meets Code.</h1>
-        <p>
-          As a junior developer venturing into design, I am dedicated to
-          blending creativity with technical expertise. Explore how my journey
-          in design and development brings innovative ideas to life and
-          transforms concepts into impactful digital solutions.
-          <br />
-          <br />
-          <a
-            href="https://www.linkedin.com/in/aziz-sigar-5009611b2/?originalSubdomain=nl"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-link"
-          >
-            <strong>Click here to get in touch</strong>
-          </a>
-        </p>
-      </div>
+      <h1>Welcome to My Portfolio</h1>
+      <p>
+        Hi, I'm Aziz! I'm a full-stack web developer with a passion for creating beautiful and functional web applications. Explore my journey, works, and feel free to join the gang!
+      </p>
     </div>
   );
-}
+};

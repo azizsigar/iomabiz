@@ -1,7 +1,8 @@
 // src/Accordion.jsx
 
-import React, { useState } from "react";
-import "./Accordion.css"; // CSS dosyasını import edin
+import { useState } from "react";
+import PropTypes from "prop-types";
+import "./Accordion.css"; // Ensure this path is correct
 
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,18 +23,23 @@ const AccordionItem = ({ title, content }) => {
   );
 };
 
+AccordionItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+};
+
 const Accordion = () => {
   return (
     <div className="accordion">
       <AccordionItem
-        title="error"
-        content="Açıklama 1. Bu alan, başlığa tıklandığında açılır."
+        title="error" // eslint-disable-line
+        content="Açıklama 1. Bu alan, başlığa tıklandığında açılır." // eslint-disable-line
       />
       <AccordionItem
-        title="error"
-        content="Açıklama 2. Bu alan da başlığa tıklandığında açılır."
+        title="error" // eslint-disable-line
+        content="Açıklama 2. Bu alan da başlığa tıklandığında açılır." // eslint-disable-line
       />
-      {/* Daha fazla AccordionItem ekleyebilirsiniz */}
+      {/* Daha fazla AccordionItem ekleyebilirsiniz */} // eslint-disable-line
     </div>
   );
 };
