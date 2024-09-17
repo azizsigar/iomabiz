@@ -1,47 +1,42 @@
-/* src/Accordion.css */
-
-/* Genel stiller */
 body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    margin: 0;
-    padding: 20px;
+  background-color: black;
+  margin: 0;
+  padding: 20px;
 }
-
+* {
+  font-family: Orbitron, sans-serif;
+  initial-letter: 2;
+  letter-spacing: 3px;
+}
 .accordion {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.accordion-item {
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
+  max-width: 600px;
+  margin: auto;
 }
 
 .accordion-header {
-    background-color: blueviolet;
-    color: black;
-    border: none;
-    padding: 15px;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-    font-size: 16px;
+  background-color: #646cff;
+  color: black;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  font-size: x-large;
+  border-radius: 78% 22% 100% 0% / 66% 100% 0% 34% ;
 }
 
 .accordion-content {
-    max-height: 0; /* Başlangıçta içeriği gizle */
-    overflow: hidden; /* İçeriğin taşmasını engelle */
-    padding: 0 15px; /* İçeriğin kenar boşluklarını ayarla */
-    background-color: bisque;
-    color: black;
-    transition: max-height 1s ease, padding 0.4s ease; /* Animasyon geçişi */
+  max-height: 0; /* Başlangıçta içeriği gizle */
+  overflow: hidden; /* İçeriğin taşmasını engelle */
+  background-color: bisque;
+  color: black;
+  border-radius: 100% 0% 91% 9% / 0% 89% 11% 100%  ;
+  transition: max-height 1s ease, padding 0.4s ease; /* Animasyon geçişi */
+  text-align: center; /* Yazıları ortala */
 }
 
 /* Açık olan içeriğin stilini tanımla */
 .accordion-content.open {
-    color: black;
-    max-height: 500px; /* İçeriğin yüksekliği için yeterli bir değer belirle */
-    padding: 15px; /* Açıldığında içeriğin padding değerini ayarla */
+  color: black;
+  max-height: 500px; /* İçeriğin yüksekliği için yeterli bir değer belirle */
+  padding: 15px; /* Açıldığında içeriğin padding değerini ayarla */
 }

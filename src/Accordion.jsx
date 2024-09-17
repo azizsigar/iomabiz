@@ -32,8 +32,8 @@ const Accordion = () => {
   return (
     <div className="accordion">
       <AccordionItem
-        title="error" // eslint-disable-line
-        content="Açıklama 1. Bu alan, başlığa tıklandığında açılır." // eslint-disable-line
+        title="wellcome" // eslint-disable-line
+        content=" I spent a year teaching Turkish in Turkey and another in Ghana. Following this, I decided to pursue a career change and became a video editor. As I continued to discover my talents, I embarked on a journey to learn programming. During this time, I explored three continents and met hundreds of people. I had the opportunity to work with Mano and Freedomcombination in the Netherlands while developing my web design skills through further education. My ultimate goal is to continue growing and making a positive impact on others." // eslint-disable-line
       />
       <AccordionItem
         title="error" // eslint-disable-line

@@ -1,8 +1,7 @@
-// src/Accordion.jsx
 
 import React, { useState } from "react";
-import "./Accordion.css"; // CSS dosyasını import edin
-
+import "./Accordion.css"; 
+import Works from "./pages/Works";
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,13 +25,10 @@ const Accordion = () => {
   return (
     <div className="accordion">
       <AccordionItem
-        title="error"
-        content="Açıklama 1. Bu alan, başlığa tıklandığında açılır."
+        title="about me"
+        content=" I worked as a teacher in Turkey and Ghana. When I moved to the Netherlands, I explored my skills through voluntary work in graphic design and video editing. Later, I discovered my talent for programming. I volunteered with the Mano and Freedomcombination organizations and am currently continuing my volunteer work with Mano. At the same time, I design beautiful websites and am looking for a business partner."
       />
-      <AccordionItem
-        title="error"
-        content="Açıklama 2. Bu alan da başlığa tıklandığında açılır."
-      />
+      <Works />
       {/* Daha fazla AccordionItem ekleyebilirsiniz */}
     </div>
   );
