@@ -1,3 +1,6 @@
+export const searchBlogs = async (req, res) => {
+res.status(200).json({ message: "search blogs" });
+}
 export const getBlogs = async (req, res) => {
 res.status(200).json({ message: "get all blogs" });
 };

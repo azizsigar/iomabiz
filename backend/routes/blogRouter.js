@@ -1,6 +1,7 @@
 import express from "express";
 
 import {
+  searchBlogs,
   getBlogs,
   getBlog,
   createBlog,
@@ -9,7 +10,7 @@ import {
 } from "../controllers/blogController.js";
 
 const blogRouter = express.Router();
-
+blogRouter.get("/search", searchBlogs);
 blogRouter.get("/", getBlogs);
 blogRouter.get("/:id", getBlog);
 blogRouter.post("/", createBlog);
